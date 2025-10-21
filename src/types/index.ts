@@ -1,3 +1,14 @@
+import { IconDefinition, IconProp } from "@fortawesome/fontawesome-svg-core";
+import type { MouseEventHandler, ReactNode, RefObject } from "react";
+
+export interface INavMenuItem {
+  id: string;
+  title: string;
+  path: string;
+  section: string;
+  submenu?: INavMenuItem[];
+}
+
 export interface INavItem {
   name: string;
   link: string;
@@ -39,6 +50,7 @@ export interface IProjectItem {
   screenshots?: string[];
   about?: string;
 }
+
 export type IServiceItem = {
   id: number | string;
   title: string;
@@ -57,6 +69,12 @@ export enum SkillLevel {
   Expert,
   Intermediate,
   Beginner,
+}
+
+export interface ISkillItem {
+  title: string;
+  level?: SkillLevel;
+  icon?: string;
 }
 
 export interface ISocialLinkItem {

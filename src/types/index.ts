@@ -3,6 +3,12 @@ export interface INavItem {
   link: string;
   icon: IconProp;
 }
+export interface ISocialLinkItem {
+  url: string;
+  icon: IconDefinition | string;
+  text: string;
+  name?: string;
+}
 export interface CoreComponentsProps {
   children: ReactNode;
   classNames?: string;

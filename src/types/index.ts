@@ -83,6 +83,28 @@ export interface ISocialLinkItem {
   text: string;
   name?: string;
 }
+
+export interface MenuItemProps {
+  items: INavMenuItem;
+  depthLevel: number;
+  mobileNav: boolean;
+  handleCloseMobileMenu: () => void;
+  current?: string;
+}
+
+export interface DropdownMenuProps
+  extends Omit<MenuItemProps, "items" | "current"> {
+  submenus: INavMenuItem[];
+  dropdown: boolean;
+}
+
+export interface ButtonComponentProps {
+  label: string;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+  classNames?: string;
+  name?: string;
+}
+
 export interface CoreComponentsProps {
   children: ReactNode;
   classNames?: string;
@@ -90,6 +112,18 @@ export interface CoreComponentsProps {
   id?: string;
   elementRef?: RefObject<HTMLDivElement>;
 }
+
+export interface ViewportProps {
+  root?: null | undefined;
+  rootMargin?: string | undefined;
+  threshold?: number | undefined;
+}
+
+export interface ShootingStarProps {
+  vw: number;
+  vh: number;
+}
+
 export interface TimelineEntry {
   title: string;
   content: React.ReactNode;

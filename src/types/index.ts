@@ -3,6 +3,17 @@ export interface INavItem {
   link: string;
   icon: IconProp;
 }
+
+export interface IExperienceItem {
+  designation: string;
+  company: string;
+  startDate: string;
+  endDate?: string;
+  isCurrentJob: boolean;
+  location: string;
+  shortDescription?: string;
+  description: string[];
+}
 export type IServiceItem = {
   id: number | string;
   title: string;
@@ -23,4 +34,15 @@ export interface CoreComponentsProps {
   onClick?: MouseEventHandler<HTMLDivElement>;
   id?: string;
   elementRef?: RefObject<HTMLDivElement>;
+}
+export interface TimelineEntry {
+  title: string;
+  content: React.ReactNode;
+}
+
+export interface BulletedTextProps {
+  children: ReactNode;
+  classNames?: string;
+  iconSize?: string | number;
+  bulletColor?: string;
 }

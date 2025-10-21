@@ -22,6 +22,18 @@ export type IServiceItem = {
   description: string;
   icons: string[];
 };
+
+export interface ISkillListItem {
+  title: string;
+  items: ISkillItem[];
+}
+
+export enum SkillLevel {
+  Expert,
+  Intermediate,
+  Beginner,
+}
+
 export interface ISocialLinkItem {
   url: string;
   icon: IconDefinition | string;

@@ -3,6 +3,14 @@ export interface INavItem {
   link: string;
   icon: IconProp;
 }
+export type IServiceItem = {
+  id: number | string;
+  title: string;
+  icon?: IconDefinition;
+  shortDescription: string;
+  description: string;
+  icons: string[];
+};
 export interface ISocialLinkItem {
   url: string;
   icon: IconDefinition | string;

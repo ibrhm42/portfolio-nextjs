@@ -14,6 +14,31 @@ export interface IExperienceItem {
   shortDescription?: string;
   description: string[];
 }
+
+export enum RepoType {
+  Public,
+  Private,
+}
+
+export enum ProjectType {
+  Personal,
+  JobWork,
+  Freelance,
+}
+
+export interface IProjectItem {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  repoType: RepoType;
+  projectType?: ProjectType;
+  githubUrl?: string;
+  url?: string;
+  tags?: string[];
+  screenshots?: string[];
+  about?: string;
+}
 export type IServiceItem = {
   id: number | string;
   title: string;

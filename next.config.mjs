@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
+ import('next').NextConfig
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   webpack(config) {
     return config;
   },

@@ -4,8 +4,8 @@ const experiences: IExperienceItem[] = [
   {
     designation: "Web Development Intern",
     company: "Career Corner Education Pvt Ltd",
-    startDate: "Jul 2024",
-    endDate: "Nov 2024",
+    startDate: "Jul 2025",
+    endDate: "Nov 2025",
     isCurrentJob: false,
     location: "Remote",
     description: [

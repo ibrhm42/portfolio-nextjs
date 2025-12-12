@@ -27,7 +27,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Ibrahim Khalil",
   description:
-    "Ibrahim Khalil is a proficient Software Engineer and Frontend Developer from India, skilled in front-end development using modern tech stacks.",
+    "Ibrahim Khalil is a proficient Software Engineer and Frontend Developer from Pakistan, skilled in front-end development using modern tech stacks.",
   robots: {
     index: true,
     follow: true,

@@ -3,10 +3,10 @@ import { IExperienceItem } from "@/types";
 const experiences: IExperienceItem[] = [
   {
     designation: "Web Development Intern",
-    company: "Career Corner Education Pvt Ltd",
-    startDate: "Jul 2025",
-    endDate: "Nov 2025",
-    isCurrentJob: false,
+    company: "Agency99",
+    startDate: "Aug 2025",
+    endDate: "Present",
+    isCurrentJob: true,
     location: "Remote",
     description: [
       "Developed reusable user iterfaces and worked on enhancements for company portals.",
